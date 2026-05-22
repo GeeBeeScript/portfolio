@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 @theme {
+  --font-brico: var(--font-bricolage);
+  --font-space: var(--font-space);
+  --font-hanken: var(--font-hanken);
+  --font-caglio: var(--font-caglio);
+  --font-nunito: var(--font-nunito);
+
   --animate-scroll-left: scroll-left 20s linear infinite;
   --animate-scroll-right: scroll-right 20s linear infinite;
 
@@ -9,13 +15,13 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-30%);
+      transform: translateX(-50%);
     }
   }
 
   @keyframes scroll-right {
     from {
-      transform: translateX(-30%);
+      transform: translateX(-50%);
     }
     to {
       transform: translateX(0%);

@@ -16,8 +16,8 @@ const Intro = () => {
                 <p>Available for Freelance</p>
               </div>
           </div>
-          <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-zinc-950/70 via-[#222] to-zinc-950">Developing Web Applications That Make Profit</h1>
-          <p className="text-[#444]">
+          <h1 className="text-3xl font-bold font-brico text-transparent bg-clip-text bg-gradient-to-r from-zinc-950/70 via-[#222] to-zinc-950">Developing Web Applications That Make Profit</h1>
+          <p className="text-[#444] font-nunito">
             I’m Mitchel - a full-stack developer with over five years of
             experience building reliable, fast web applications from idea to
             launch. I focus on writing clean, maintainable code and creating

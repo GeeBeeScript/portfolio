@@ -68,7 +68,7 @@ const Stack = () => {
   return (
     <section className="relative w-full my-5 py-5 px-4 flex flex-col justify-center items-center border border-zinc-950/10">
       <div className="space-y-3 w-full">
-        <h2 className="text-3xl mb-4 w-full font-bold text-transparent bg-clip-text bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950 text-center">
+        <h2 className="text-3xl font-brico mb-4 w-full font-bold text-transparent bg-clip-text bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950 text-center">
           Technologies Used
         </h2>
 
@@ -76,7 +76,7 @@ const Stack = () => {
           className="w-full space-y-4 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
   [-webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
         >
-          <div className="mb-3 animate-scroll-left will-change-transform flex gap-4 sm:gap-7 items-center py-3 sm:py-4 px-2 group">
+          <div className="mb-3 font-nunito animate-scroll-left will-change-transform flex gap-4 sm:gap-7 items-center py-3 sm:py-4 px-2 group">
             {[...firstImgArr, ...firstImgArr].map((item, index) => (
               <div
                 key={index}
@@ -93,7 +93,7 @@ const Stack = () => {
               </div>
             ))}
           </div>
-          <div className="mb-3 animate-scroll-right will-change-transform flex gap-4 sm:gap-7 items-center py-3 sm:py-4 px-2 group">
+          <div className="mb-3 font-nunito animate-scroll-right will-change-transform flex gap-4 sm:gap-7 items-center py-3 sm:py-4 px-2 group">
             {[...secondImgArr, ...secondImgArr].map((item, index) => (
               <div
                 key={index}
