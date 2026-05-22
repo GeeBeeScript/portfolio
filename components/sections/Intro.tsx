@@ -6,35 +6,51 @@ const Intro = () => {
   return (
     <section className="max-w-[1350px] mx-auto relative flex py-5 px-4 justify-center items-center border border-zinc-950/10">
       <div className="flex justify-between items-center max-sm:min-h-[60vh]">
-        <div className="w-[50%] space-y-2">
-            <div className="px-1 py-1 text-sm rounded-[3rem] w-50 bg-green-500/60 text-green-900 font-semibold">
-              <div className="flex justify-center items-center">
-                <Dot
-                  size={10}
-                  className="w-4 h-4 stroke-9 p-0 m-0 block"
-                />
-                <p>Available for Freelance</p>
-              </div>
+        <div className="w-full sm:w-[50%] space-y-2">
+          <div className="px-1 py-1 text-sm rounded-[3rem] w-50 bg-green-500/60 text-green-900 font-semibold">
+            <div className="flex justify-center items-center">
+              <Dot size={10} className="w-4 h-4 stroke-9 p-0 m-0 block" />
+              <p className="font-hanken">Available for Freelance</p>
+            </div>
           </div>
-          <h1 className="text-3xl font-bold font-brico text-transparent bg-clip-text bg-gradient-to-r from-zinc-950/70 via-[#222] to-zinc-950">Developing Web Applications That Make Profit</h1>
-          <p className="text-[#444] font-nunito">
+          <div className="max-sm:flex max-sm:gap- max-sm:flex-wrap max-sm:justify-between max-sm:items-center">
+            <h1 className="text-4xl max-sm:w-full max-sm:text-wrap sm:text-[2.5rem] sm:my-2 font-bold font-brico text-transparent bg-clip-text bg-gradient-to-r from-zinc-950/70 via-[#222] to-zinc-950">
+              Developing Web Applications That Make Profit
+            </h1>
+
+            <div className="w-[80%] h-full sm:hidden bg-zinc-400 rounded-[1rem] px-2 my-3">
+              <Image
+                src="/resources/sash_pic_remove.png"
+                width={30}
+                height={30}
+                alt="sash pic"
+                className="w-full h-full object-cover"
+                sizes="100vw"
+                quality={90}
+                priority
+              />
+            </div>
+          </div>
+          <p className="text-[#444] font-nunito sm:my-5">
             I’m Mitchel - a full-stack developer with over five years of
             experience building reliable, fast web applications from idea to
             launch. I focus on writing clean, maintainable code and creating
             smooth, intuitive user experiences across both frontend and backend.
           </p>
-          <div className="flex items-center space-x-2">
-            <button className="flex space-x-2 items-center rounded-[2rem] bg-zinc-950 text-white px-3 py-2 text-sm">
+          <div className="flex items-center space-x-2 font-space font-semibold mt-5">
+            <button className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-zinc-950 text-white px-3 py-2 text-sm">
               <span>Book a Call</span>{" "}
               <span>
                 <CircleUserRound className="text-white" />
               </span>
             </button>
-            <button className="flex space-x-2 items-center rounded-[2rem] bg-white text-zinc-950 px-3 py-2 text-sm">View Portfolio</button>
+            <button className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-white text-zinc-950 px-3 py-2 text-sm">
+              View Portfolio
+            </button>
           </div>
           <div></div>
         </div>
-        <div className="w-[50%] sm:w-[30%] h-full bg-zinc-400 rounded-[1rem] px-2">
+        <div className="hidden sm:block sm:w-[30%] bg-zinc-400 rounded-[1rem] px-2">
           <Image
             src="/resources/sash_pic_remove.png"
             width={30}

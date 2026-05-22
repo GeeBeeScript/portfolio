@@ -5,11 +5,11 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="relative w-full my-5 py-5 px-4 border-zinc-950/10 border">
-      <div className="w-full sm:w-[60vw] sm:mx-auto flex flex-col justify-center items-start gap-3 bg-blue-200">
+      <div className="w-full sm:w-[60vw] sm:mx-auto flex flex-col justify-center items-start gap-3">
         <div className="w-full flex justify-between items-center">
           <h2 className="text-3xl font-brico my-5 text-center flex flex-col justify-center items-start space-y-2">
-            <span className="bg-clip-text font-bold text-transparent bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950">Your Vision, My Creation</span>{" "}
-            <span className="bg-clip-text font-bold text-transparent bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950">Let's Bring It To Life</span>
+            <span className="text-start bg-clip-text font-bold text-transparent bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950">Your Vision, My Creation.</span>{" "}
+            <span className="text-start bg-clip-text font-bold text-transparent bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950">Let's Bring It To Life.</span>
           </h2>
           
         </div>
