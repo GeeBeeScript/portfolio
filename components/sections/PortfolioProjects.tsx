@@ -72,7 +72,7 @@ const PortfolioProjects = () => {
             >
               <div className="w-full font-hanken flex justify-between items-center text-[#444] text-sm gap-5 border-b-olive-400 border-b pb-2">
                 <div>
-                  {project.date} {index}
+                  {project.date}
                 </div>
                 <div>{project.projectCategories}</div>
               </div>
