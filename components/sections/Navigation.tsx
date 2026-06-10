@@ -5,7 +5,7 @@ import { ClipboardList, Sun, House } from "lucide-react";
 import Link from "next/link";
 const Navigation = () => {
   return (
-    <nav className="my-5 has-[.trigger-hover:hover]:px-5 transition-all duration-100 ease-in  font-hanken max-sm:w-full mx-auto bg-gray-50/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.06)] text-[#444] max-w-lg flex justify-center gap-3 item-center py-3 px-4 rounded-full cursor-pointer">
+    <nav className="my-5 transition-all duration-100 ease-in  font-hanken max-sm:w-full mx-auto bg-gray-50/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.06)] text-[#444] max-w-lg flex justify-center gap-3 item-center py-3 px-4 rounded-full cursor-pointer">
       <div className="flex gap-2 justify-around items-center px-2 border-r-zinc-800/10 border-r trigger-hover">
         <span className="sm:block hidden">Home</span>{" "}
         <span>
@@ -15,7 +15,7 @@ const Navigation = () => {
 
       <Link
         href="https://x.com/SoftwareEngrGb"
-        className="trigger-hover flex justify-center items-center px-3 border-r-zinc-800/10 border-r"
+        className="flex justify-center items-center px-3 border-r-zinc-800/10 border-r"
       >
         <Image
           src="/resources/x.svg"
@@ -27,7 +27,7 @@ const Navigation = () => {
       </Link>
       <Link
         href="https://www.linkedin.com/in/mitchel-sodimu-5a7aab3a9/"
-        className="trigger-hover flex justify-center items-center px-3 border-r-zinc-800/10 border-r"
+        className="flex justify-center items-center px-3 border-r-zinc-800/10 border-r"
       >
         <Image
           src="/resources/linkedin-svg.svg"
@@ -40,10 +40,10 @@ const Navigation = () => {
       <div className="flex justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover">
         <ClipboardList className="size-5 sm:size-7" />
       </div>
-      <div className="flex justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover">
+      <div className="flex max-sm:hidden justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover">
         <Sun className="size-5 sm:size-7" />
       </div>
-      <div className="trigger-hover flex justify-around items-center px-3 ">
+      <div className="flex justify-around items-center px-3 ">
         <button
           onClick={() =>
             document

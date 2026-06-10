@@ -54,7 +54,7 @@ const PortfolioProjects = () => {
       id="portfolio"
       className="relative w-full my-5 py-5 px-4 border-zinc-950/10 border"
     >
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         <h2 className="text-3xl font-brico mb-4 w-full font-bold text-transparent bg-clip-text bg-linear-to-r from-zinc-950/70 via-[#222] to-zinc-950 text-center">
           A few of my Projects
         </h2>
