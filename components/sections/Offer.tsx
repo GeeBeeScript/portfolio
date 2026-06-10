@@ -2,6 +2,7 @@
 
 import { MonitorSmartphone, MoveUpRight, Sparkle } from "lucide-react";
 import React, { useState } from "react";
+import ShowModalBtn from "../sub/ShowModalBtn";
 
 const OFFERS = [
   {
@@ -68,7 +69,7 @@ const OFFERS = [
 
 
 const OfferSection = () => {
-  const [selection, setSelection] = useState<string | null>("WAD")
+  const [selection, setSelection] = useState<string | null>(null)
   const selectionIsActive = "bg-zinc-950 text-white px-6 py-3"
   const selectionInActive = "text-zinc-950 bg-gray-300"
   const selectedOffer = OFFERS.filter(offer => offer.id === selection)
@@ -84,19 +85,19 @@ const OfferSection = () => {
           <div onClick={() => setSelection(null)} className={`${!selection ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
             All <span className={`${!selection ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
-          <div onClick={() => setSelection("WAD")} className={`${selection === "WAD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
+          <div onClick={() => setSelection("WAD")} className={`${selection === "WAD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center text-center cursor-pointer`}>
             Web Application Development <span className={`${selection === "WAD" ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
-          <div onClick={() => setSelection("WD")} className={`${selection === "WD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
+          <div onClick={() => setSelection("WD")} className={`${selection === "WD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold tracking-wide flex justify-center items-center cursor-pointer`}>
             Website Design <span className={`${selection === "WD" ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
           <div onClick={() => setSelection("BED")} className={`${selection === "BED" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
             Back-end Development <span className={`${selection === "BED" ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
-          <div onClick={() => setSelection("FBWD")} className={`${selection === "FBWD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
+          <div onClick={() => setSelection("FBWD")} className={`${selection === "FBWD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center text-center cursor-pointer`}>
             Full Branding & Web Development <span className={`${selection === "FBWD" ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
-          <div onClick={() => setSelection("SDD")} className={`${selection === "SDD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center cursor-pointer`}>
+          <div onClick={() => setSelection("SDD")} className={`${selection === "SDD" ? selectionIsActive : selectionInActive } px-5 py-3 rounded-3xl font-semibold  tracking-wide flex justify-center items-center text-center cursor-pointer`}>
             SAAS / Dashboard Development<span className={`${selection === "SDD" ? "pl-2" : "hidden"}`}><Sparkle /></span>
           </div>
         </div>
@@ -111,7 +112,7 @@ const OfferSection = () => {
               {offer.comment}
             </div>
             <div className="w-full my-2">
-              <button className="bg-zinc-950 flex space-x-1 justify-center items-center font-semibold underline underline-offset-5 w-[90%] mr-auto py-3 px-3 rounded-3xl text-white"><span>Contact Me</span><span><MoveUpRight /></span></button>
+              <ShowModalBtn className="bg-zinc-950 flex space-x-1 justify-center items-center font-semibold underline underline-offset-5 w-[90%] mr-auto py-3 px-3 rounded-3xl text-white cursor-pointer"><span>Contact Me</span><span><MoveUpRight /></span></ShowModalBtn>
             </div>
             <div className="flex font-space flex-col space-y-3 max-w-[80%] text-md text-zinc-950/70">
               {
@@ -131,7 +132,7 @@ const OfferSection = () => {
             <div className="text-sm font-nunito text-zinc-900/60 leading-4 max-w-[90%] mr-auto">
               {offer.comment}
             </div>
-            <div className="w-full bg-orange-400 my-2">
+            <div className="w-full my-2">
               <button className="bg-zinc-950 flex space-x-1 justify-center items-center font-semibold underline underline-offset-5 w-[90%] mr-auto py-3 px-3 rounded-3xl text-white"><span>Contact Me</span><span><MoveUpRight /></span></button>
             </div>
             <div className="flex font-space flex-col space-y-3 max-w-[80%] text-md text-zinc-950/70">

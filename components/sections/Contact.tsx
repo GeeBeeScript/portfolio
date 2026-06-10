@@ -1,10 +1,11 @@
 import { Mails } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import ShowModalBtn from "../sub/ShowModalBtn";
 
 const Contact = () => {
   return (
-    <section className="relative w-full my-5 py-5 px-4 border-zinc-950/10 border">
+    <section id="contact" className="relative w-full my-5 py-5 px-4 border-zinc-950/10 border">
       <div className="w-full sm:w-[60vw] sm:mx-auto flex flex-col justify-center items-start gap-3">
         <div className="w-full flex justify-between items-center">
           <h2 className="text-3xl font-brico my-5 text-center flex flex-col justify-center items-start space-y-2">
@@ -36,12 +37,12 @@ const Contact = () => {
           </p>
         </div>
         <div className="w-full font-space">
-          <button className="w-full bg-zinc-950 font-semibold text-white py-3 px-3 rounded-full flex justify-center items-center gap-3">
+          <ShowModalBtn className="w-full bg-zinc-950 font-semibold text-white py-3 px-3 rounded-full flex justify-center items-center gap-3 cursor-pointer">
             <span>Drop me an email at engrmitchel@gmail.com</span>{" "}
             <span>
               <Mails />
             </span>
-          </button>
+          </ShowModalBtn>
         </div>
       </div>
 

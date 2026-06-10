@@ -1,8 +1,11 @@
 import { CircleUserRound, Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import ScrollButton from "../sub/ScrollButton";
+import ShowModalBtn from "../sub/ShowModalBtn";
 
 const Intro = () => {
+
   return (
     <section className="max-w-[1350px] mx-auto relative flex py-5 px-4 justify-center items-center border border-zinc-950/10">
       <div className="flex justify-between items-center max-sm:min-h-[60vh]">
@@ -38,15 +41,14 @@ const Intro = () => {
             smooth, intuitive user experiences across both frontend and backend.
           </p>
           <div className="flex items-center space-x-2 font-space font-semibold mt-5">
-            <button className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-zinc-950 text-white px-3 py-2 text-sm">
+            <ShowModalBtn className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-zinc-950 text-white px-3 py-2 text-sm hover:bg-zinc-900/80 hover:rounded-2xl transition-all duration-100 ease-in-out">
               <span>Book a Call</span>{" "}
               <span>
                 <CircleUserRound className="text-white" />
               </span>
-            </button>
-            <button className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-white text-zinc-950 px-3 py-2 text-sm">
-              View Portfolio
-            </button>
+            </ShowModalBtn>
+            <ScrollButton goTo="portfolio" className="flex space-x-2 items-center cursor-pointer rounded-[2rem] bg-white text-zinc-950 px-3 py-2 text-sm hover:bg-white/50 hover:rounded-2xl transition-all duration-100 ease-in-out">View Portfolio</ScrollButton>
+            
           </div>
           <div></div>
         </div>

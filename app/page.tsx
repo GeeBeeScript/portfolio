@@ -1,4 +1,5 @@
 import Contact from "@/components/sections/Contact";
+import ContactModal from "@/components/sections/ContactModal";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import Intro from "@/components/sections/Intro";
