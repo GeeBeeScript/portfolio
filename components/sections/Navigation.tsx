@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { ClipboardList, Sun, House } from "lucide-react";
@@ -37,7 +37,14 @@ const Navigation = () => {
           className="w-5 h-5"
         />
       </Link>
-      <div className="flex justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover">
+      <div
+        onClick={() =>
+          document
+            .getElementById("contact")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+        className="flex justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover"
+      >
         <ClipboardList className="size-5 sm:size-7" />
       </div>
       <div className="flex max-sm:hidden justify-around items-center px-3 border-r-zinc-800/10 border-r trigger-hover">
