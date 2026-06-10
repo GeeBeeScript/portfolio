@@ -51,7 +51,7 @@ const ContactModal = ({ isOpen, onClose }: props) => {
               placeholder="E-mail address"
               className="my-2 border-b w-full text-[1.1rem] py-2 px-2"
             />
-            <button className="py-3 bg-zinc-950 text-white w-full rounded-xl my-3 hover:bg-zinc-950/90 transition-all duration-100 ease-in cursor-pointer">
+            <button className="py-3 px-3 bg-zinc-950 text-white w-full rounded-xl my-3 hover:bg-zinc-950/90 transition-all duration-100 ease-in cursor-pointer">
               Add your E-mail and I'll get in contact
             </button>
           </div>
