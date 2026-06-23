@@ -46,6 +46,17 @@ const PROJECTS = [
     colour: "#fc7cfc",
     href: "https://www.thewisdomroom.net",
   },
+  {
+    date: "2026",
+    projectCategories: "Website",
+    title:
+      "Landing Page for a Motor Vehicle Repair Service Business Based In The UK",
+    comments:
+      "Developed a landing page for a motor vehicle repair business, optimized for conversions.",
+    image: "/resources/car-repair.png",
+    colour: "#6180fa",
+    href: "https://car-body-repair-site-live.vercel.app/",
+  },
 ];
 
 const PortfolioProjects = () => {
