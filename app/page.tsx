@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <Intro />
       <Stack />
-      <OfferSection />
       <PortfolioProjects />
+      <OfferSection />
       <Contact />
       <Footer />
     </main>
