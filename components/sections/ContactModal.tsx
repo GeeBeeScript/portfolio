@@ -1,6 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
+import { useEffect } from "react";
 
 type props = {
   isOpen: boolean;
@@ -8,6 +9,15 @@ type props = {
 };
 
 const ContactModal = ({ isOpen, onClose }: props) => {
+  useEffect(() => {
+  if (isOpen) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+
+  return () => document.body.classList.remove("overflow-hidden");
+}, [isOpen]);
   const onEmailSubmit = () => {
     const mailSubject = encodeURIComponent(`Interested in your Services`);
     const mailBody = encodeURIComponent(
